@@ -1,0 +1,66 @@
+/* dialog */
+dialog {
+    border-radius: 12px;
+    width: 25%;
+    min-height: 25%;
+    background-color:rgb(204, 252, 237); 
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+form > input:not(input[type="button"]){
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+form {
+    padding: 25px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 75px;
+    margin-bottom: 25px;
+}
+
+input[type="button"] {
+    border-radius: 15px;
+    width: 5rem;
+    padding: 5px 0px;
+    font-size: 0.85rem;
+}
+
+#cancel-btn {
+    margin-right: 10px;
+}
+
+/* blog page */
+body {
+    background-color: rgb(128, 186, 186);
+}
+#add-btn {
+    border-radius: 15px;
+    width: 5rem;
+    padding: 5px 0px;
+    font-size: 0.85rem;
+    background: lightgrey;
+}
+
+ul {
+    font-size: 1.5rem;
+}
+
+ul > li {
+    padding-bottom: 15px;
+}
+
+div {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}

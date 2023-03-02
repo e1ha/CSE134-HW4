@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta name="description" content="Contact Page">
+    <meta name="author" content="Elaine Ha">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href = "style/contact.css">
+</head>
+
+<body>
+    <nav>
+        <label for="hamburger">
+        <svg id=hamburger-menu fill="white" viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </label>
+        <input type="checkbox" id="hamburger">
+        
+        <div id="hamburger-items">
+            <a href="./index.html">About</a>
+            <a href="./projects.html">Projects</a>
+            <a id="last-nav-item" href="#">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Contact Me</h1>
+        <form>
+            <label for="name">Full Name: </label><br>
+            <input type="text" id="name" placeholder="Your name..."><br>
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" placeholder="Your email..."><br>
+            <label for="subject">Subject: </label><br>
+            <input type="text" id="subject" placeholder="Subject..."><br>
+            <label for="message">Message: </label><br>
+            <textarea id="message" placeholder="Your message..."></textarea>
+            <input id="submit-btn" type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>

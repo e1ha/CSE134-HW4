@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elaine Ha - Computer Science</title>
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Elaine Ha">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href = "style/main.css">
+</head>
+
+<body>
+    <nav>
+        <label for="hamburger">
+        <svg id=hamburger-menu fill="white" viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </label>
+        <input type="checkbox" id="hamburger">
+        
+        <div id="hamburger-items">
+            <a href="#">About</a>
+            <a href="./projects.html">Projects</a>
+            <a id="last-nav-item" href="./contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Hi! I'm Elaine...</h1>
+        <picture>
+            <source type="image/webp" srcset="images/student-coding.avif">
+            <source type="image/webp" srcset="images/student-coding.webp">
+            <img src="images/student-coding.jpg" alt="Image of student studying computer science">
+        </picture>
+        <p>I'm a senior computer science student studying in the University of California, San Diego. I have some experience in web development and I'm interested in working in both frontend and backend. Please contact me if you have any opportunites! You may take a look at my portfolio by clicking the button below.</p>
+        <a id="contact-btn" href="./contact.html">Contact Me</a>
+        <a href="./projects.html">Projects</a>
+    </main>
+</body>
+</html>

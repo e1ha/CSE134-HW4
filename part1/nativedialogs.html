@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Dialogs</title>
+    <meta name="author" content="Elaine Ha">
+    <script type="text/javascript" src="../purify.min.js"></script>
+</head>
+
+<body>
+    <h1>Simple Dialogs?</h1>
+    <button id="alert-btn">Alert</button>
+    <button id="confirm-btn">Confirm</button>
+    <button id="prompt-btn">Prompt</button>
+    <button id="safer-btn">Safer Prompt</button>
+    <hr>
+    <output id="output-tag"></output>
+
+    <script>
+        alertBtn = document.getElementById('alert-btn');
+        alertBtn.addEventListener("click", () => alert("Alert Pressed"));
+
+        confirmBtn = document.getElementById('confirm-btn');
+        confirmBtn.addEventListener("click", function() {
+            let outputTag = document.getElementById("output-tag");
+            let response = confirm("Do you confirm this?");
+            if (response == true) {
+                outputTag.innerText = "Confirm result : true";
+            } else {
+                outputTag.innerText = "Confirm result : false";
+            }
+        });
+
+        promptBtn = document.getElementById('prompt-btn');
+        promptBtn.addEventListener("click", function() {
+            let outputTag = document.getElementById("output-tag");
+            let promptValue = prompt("What is your name?");
+            if (promptValue == null) {
+                outputTag.innerHTML = "User didn't enter anything";
+            } else {
+                outputTag.innerHTML = `Prompt Result : ${promptValue}`;
+            }
+        });
+
+        /* <b onmouseover="alert('pwned')">Roll me </b> */
+        saferBtn = document.getElementById('safer-btn');
+        saferBtn.addEventListener("click", function() {
+            let outputTag = document.getElementById("output-tag");
+            let promptValue = prompt("What is your name?");
+
+            if (promptValue == null) {
+                outputTag.innerHTML = "User didn't enter anything";
+            } else {
+                let outputText = sanitizeResults`Prompt Result: ${promptValue}`; 
+                outputTag.innerHTML = outputText;
+            }
+
+        });
+
+        function sanitizeResults(strings, promptValue) {
+            let saferValue = DOMPurify.sanitize(promptValue);
+            return strings[0] + saferValue;
+        }
+    </script>
+</body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog CRUD</title>
+    <meta name="author" content="Elaine Ha">
+    <script type="module" src="styledBlog.js"></script>
+    <script type="text/javascript" src="../purify.min.js"></script>
+    <link rel="stylesheet" href="stylecrud.css">
+</head>
+
+<body>
+    <h1>Big List of Blogs</h1>
+    <div>No blogs currently listed.</div>
+    <ul>
+    </ul>
+    <button id="add-btn">Add Blog</button>
+
+    <dialog close>
+        <form>
+            <label for="title">Post Title</label>
+            <input type="text" name="title" id="title"><br>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date"><br>
+            <label for="summary">Post Summary</label><br>
+            <textarea type="text" name="summary" id="summary"></textarea><br>
+            <input id="cancel-btn" type="button" value="Cancel">
+            <input id="save-btn" type="button" value="Save">
+        </form>
+    </dialog>
+</body>
