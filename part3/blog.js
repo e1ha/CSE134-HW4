@@ -1,8 +1,7 @@
-import {editBtnEvent, deleteBtnEvent} from "./posts.js";
 let postArr = [];
 let dialog = document.getElementsByTagName("dialog")[0];
 let editBtnClicked = false; 
-export let listIndex; 
+let listIndex; 
 
 window.onbeforeunload = function () {
     localStorage.setItem('blog', JSON.stringify(postArr));

@@ -2,8 +2,12 @@
 dialog {
     border-radius: 12px;
     width: 25%;
-    min-height: 25%;
     background-color:rgb(204, 252, 237); 
+
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
 }
 
 label {
