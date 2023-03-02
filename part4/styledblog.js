@@ -62,9 +62,9 @@ window.addEventListener('DOMContentLoaded', function() {
             li.appendChild(span);
             let editBtn = document.createElement("img");
             let deleteBtn = document.createElement("img");
-            editBtn.src = "../images/edit.png";
+            editBtn.src = "../icons/edit.png";
             editBtn.alt = "Edit"
-            deleteBtn.src = "../images/delete.png";
+            deleteBtn.src = "../icons/delete.png";
             deleteBtn.alt = "Delete"
             editBtn.setAttribute("list-index", postArr.length-1);
             deleteBtn.setAttribute("list-index", postArr.length-1);
