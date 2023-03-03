@@ -115,6 +115,10 @@ textarea {
     color: var(--button-font-color);
 }
 
+p {
+    font-size: 1.25rem;
+}
+
 /* tablet */
 @media only screen and (max-width: 800px) {
     body {
