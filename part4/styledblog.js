@@ -8,7 +8,7 @@ window.onbeforeunload = function () {
 }
 
 window.addEventListener('DOMContentLoaded', function() {
-    if (localStorage.getItem('blog').length > 0) {
+    if (localStorage.getItem('blog') != null && localStorage.getItem('blog').length > 0) {
         let div = document.getElementsByTagName('div')[0];
         div.innerHTML = "";
         postArr = JSON.parse(localStorage.getItem('blog'));
